@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				tiki: {
+					blue: '#3BCEEB',
+					pink: '#EF476F',
+					yellow: '#FFD166',
+					green: '#06D6A0',
+					orange: '#F78C57',
+					dark: '#073B4C',
+					light: '#FFF9F0',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
