@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/tiki-catering-clone/",
+  base: "/zars-tiki-catering/",
   server: {
     host: "::",
     port: 8081,
