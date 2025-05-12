@@ -15,7 +15,7 @@ const About = () => {
           <div className="lg:w-1/2 relative">
             <div className="rounded-2xl overflow-hidden shadow-xl transform -rotate-3 w-full">
               <img 
-                src="/images/o.jpg" 
+                src="./images/o.jpg" 
                 alt="Zar's Tiki Shack Logo and Branding" 
                 className="w-full h-[400px] object-cover"
               />

@@ -9,7 +9,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center" 
           style={{
-            backgroundImage: "url('/hawaii-bg.jpg')",
+            backgroundImage: "url('./hawaii-bg.jpg')",
             filter: "blur(8px)",
             transform: "scale(1.1)",
           }}
@@ -36,9 +36,9 @@ const Hero = () => {
               <Link to="/catering">
                 <TikiButton size="lg" className="text-lg">Book Catering</TikiButton>
               </Link>
-              <a href="#menu">
+              <Link to="/#menu">
                 <TikiButton size="lg" variant="outline" className="text-lg border-white text-white hover:bg-white hover:text-tiki-dark">View Menu</TikiButton>
-              </a>
+              </Link>
             </div>
             <div className="mt-6 bg-white/20 backdrop-blur-sm p-4 rounded-lg inline-block">
               <p className="text-white text-sm font-medium">🌺 Book now and get 10% off your first catering event!</p>
@@ -50,7 +50,7 @@ const Hero = () => {
               {/* Main image - colorful shave ice */}
               <div className="rounded-2xl overflow-hidden shadow-2xl transform rotate-2 bg-white p-4">
                 <img 
-                  src="/IMG_5128.PNG" 
+                  src="./IMG_5128.PNG" 
                   alt="Colorful Hawaiian Shave Ice" 
                   className="w-full h-auto object-cover rounded-lg"
                 />

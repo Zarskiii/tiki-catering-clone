@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <div className="h-16 w-[200px] overflow-hidden">
               <img 
-                src="/images/IMG_5128.PNG" 
+                src="./images/IMG_5128.PNG" 
                 alt="Zar's Tiki Shack" 
                 className="h-[140%] w-full object-cover object-center scale-[1.08]"
                 style={{ objectPosition: "center 40%" }}
@@ -34,15 +34,15 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/#about" className="font-medium text-tiki-dark hover:text-tiki-blue">About</a>
-            <a href="/#menu" className="font-medium text-tiki-dark hover:text-tiki-blue">Menu</a>
+            <Link to="/#about" className="font-medium text-tiki-dark hover:text-tiki-blue">About</Link>
+            <Link to="/#menu" className="font-medium text-tiki-dark hover:text-tiki-blue">Menu</Link>
             <Link to="/catering" className="font-medium text-tiki-dark hover:text-tiki-blue">Catering</Link>
-            <a href="/#contact" className="font-medium text-tiki-dark hover:text-tiki-blue">Contact</a>
-            <a href="/#contact">
+            <Link to="/#contact" className="font-medium text-tiki-dark hover:text-tiki-blue">Contact</Link>
+            <Link to="/#contact">
               <Button className="bg-tiki-pink hover:bg-tiki-pink/90 text-white rounded-full">
                 Book Now
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -50,20 +50,20 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 bg-white">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="/#about" 
+              <Link 
+                to="/#about" 
                 className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
-              <a 
-                href="/#menu" 
+              </Link>
+              <Link 
+                to="/#menu" 
                 className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Menu
-              </a>
+              </Link>
               <Link 
                 to="/catering" 
                 className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
@@ -71,18 +71,18 @@ const Navbar = () => {
               >
                 Catering
               </Link>
-              <a 
-                href="/#contact" 
+              <Link 
+                to="/#contact" 
                 className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </a>
-              <a href="/#contact" onClick={() => setIsMenuOpen(false)}>
+              </Link>
+              <Link to="/#contact" onClick={() => setIsMenuOpen(false)}>
                 <Button className="bg-tiki-pink hover:bg-tiki-pink/90 text-white rounded-full mx-4">
                   Book Now
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         )}
