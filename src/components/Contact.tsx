@@ -56,7 +56,7 @@ const Contact = () => {
         variant: "default",
       });
     }
-  }, []);
+  }, [toast]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
