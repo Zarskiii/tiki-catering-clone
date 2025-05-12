@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { TikiButton } from "@/components/ui/tiki-button";
@@ -7,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-tiki-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4 text-tiki-blue">Zar's Tiki Shack</h3>
             <p className="text-gray-300 mb-6">
@@ -57,36 +56,19 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:8082345678" className="text-gray-300 hover:text-tiki-blue transition-colors">
-                  (808) 234-5678
+                <a href="tel:8016733845" className="text-gray-300 hover:text-tiki-blue transition-colors">
+                  (801) 673-3845
                 </a>
               </li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4">Newsletter</h3>
-            <p className="text-gray-300 mb-4">
-              Subscribe to get updates on seasonal flavors and special offers!
-            </p>
-            <div className="flex">
-              <Input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-gray-800 border-gray-700 text-white rounded-l-md rounded-r-none"
-              />
-              <TikiButton size="icon" className="rounded-l-none">
-                <ArrowRight className="h-5 w-5" />
-              </TikiButton>
-            </div>
           </div>
         </div>
         
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Zar's Tiki Shack. All rights reserved.
-            </p>
+            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+              <p>&copy; 2025 Zar's Tiki Shack. All rights reserved.</p>
+            </div>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 text-sm hover:text-tiki-blue transition-colors">
                 Privacy Policy

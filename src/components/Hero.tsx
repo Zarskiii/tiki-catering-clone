@@ -1,39 +1,58 @@
-
 import { TikiButton } from "@/components/ui/tiki-button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <section className="relative pt-20 overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 z-0 bg-tiki-light" 
-           style={{
-             backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233BCEEB' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
-           }}
-      />
+      {/* Hawaiian landscape background with blur effect */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{
+            backgroundImage: "url('/hawaii-bg.jpg')",
+            filter: "blur(8px)",
+            transform: "scale(1.1)",
+          }}
+        />
+        {/* Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-tiki-dark/40" />
+      </div>
 
       <div className="container mx-auto px-4 pt-20 pb-24 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-tiki-dark mb-6">
-              Authentic <span className="text-tiki-blue">Hawaiian</span> Shave Ice Catering
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Authentic <span className="text-tiki-pink font-bold relative" style={{
+                textShadow: "1px 1px 2px rgba(0, 0, 0, 0.7)",
+              }}>Hawaiian</span> Shave Ice Catering
             </h1>
-            <p className="text-xl mb-8 text-gray-700 max-w-lg mx-auto lg:mx-0">
-              Bring the tropical taste of paradise to your next event with Zar's Tiki Shack mobile catering service.
+            <p className="text-xl mb-4 text-white/90 max-w-lg mx-auto lg:mx-0">
+              Book your next catering event! We'll come to you!
+            </p>
+            <p className="text-xl mb-8 text-white/90 max-w-lg mx-auto lg:mx-0">
+              Or, come experience the tropical taste of paradise at our Snoasis, Eagle Mountain location!
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <TikiButton size="lg" className="text-lg">Book Catering</TikiButton>
-              <TikiButton size="lg" variant="outline" className="text-lg">View Menu</TikiButton>
+              <Link to="/catering">
+                <TikiButton size="lg" className="text-lg">Book Catering</TikiButton>
+              </Link>
+              <a href="#menu">
+                <TikiButton size="lg" variant="outline" className="text-lg border-white text-white hover:bg-white hover:text-tiki-dark">View Menu</TikiButton>
+              </a>
+            </div>
+            <div className="mt-6 bg-white/20 backdrop-blur-sm p-4 rounded-lg inline-block">
+              <p className="text-white text-sm font-medium">🌺 Book now and get 10% off your first catering event!</p>
             </div>
           </div>
           
           <div className="lg:w-1/2">
-            <div className="relative">
-              {/* Main image */}
-              <div className="rounded-2xl overflow-hidden shadow-2xl transform rotate-2">
+            <div className="relative mx-auto" style={{ maxWidth: "50%" }}>
+              {/* Main image - colorful shave ice */}
+              <div className="rounded-2xl overflow-hidden shadow-2xl transform rotate-2 bg-white p-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                  src="/IMG_5128.PNG" 
                   alt="Colorful Hawaiian Shave Ice" 
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover rounded-lg"
                 />
               </div>
               
