@@ -124,11 +124,11 @@ const CateringPage = () => {
                     </ul>
                   </CardContent>
                   <CardFooter className="pt-2 pb-6">
-                    <a href={createPackageLink(pkg.name)}>
+                    <Link to={createPackageLink(pkg.name)}>
                       <TikiButton variant={index === 3 ? "secondary" : pkg.featured ? "default" : "outline"} className="w-full">
                         {index === 3 ? "Request Custom Quote" : "Book This Package"}
                       </TikiButton>
-                    </a>
+                    </Link>
                   </CardFooter>
                 </Card>
               ))}
@@ -142,11 +142,11 @@ const CateringPage = () => {
                 Want something special for your event? We can customize any package to meet your specific needs.
                 Contact us directly to discuss your event requirements.
               </p>
-              <a href="/#contact">
+              <Link to="/#contact">
                 <TikiButton size="lg">
                   Contact Us About Catering
                 </TikiButton>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

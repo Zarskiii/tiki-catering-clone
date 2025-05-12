@@ -43,7 +43,7 @@ const Catering = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <img 
-                src="/shave-ice-main.png"
+                src="./shave-ice-main.png"
                 alt="Catering Event" 
                 className="rounded-xl shadow-lg w-full"
               />
@@ -109,34 +109,34 @@ const Catering = () => {
               <div className="mt-8">
                 <h4 className="font-bold text-lg text-tiki-dark mb-4">Catering Packages Available</h4>
                 <div className="grid grid-cols-2 gap-4 mb-8">
-                  <a href="/#contact?package=Small%20Event%20Package" className="block">
+                  <Link to="/#contact?package=Small%20Event%20Package" className="block">
                     <div className="p-4 rounded-lg bg-gradient-to-r from-tiki-blue/5 to-tiki-green/5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                       <div className="font-bold text-tiki-dark">Small Events</div>
                       <p className="text-tiki-blue font-medium">From $249</p>
                       <p className="text-xs text-gray-500">Up to 40 servings</p>
                     </div>
-                  </a>
-                  <a href="/#contact?package=Standard%20Event%20Package" className="block">
+                  </Link>
+                  <Link to="/#contact?package=Standard%20Event%20Package" className="block">
                     <div className="p-4 rounded-lg bg-gradient-to-r from-tiki-blue/5 to-tiki-green/5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                       <div className="font-bold text-tiki-dark">Standard Events</div>
                       <p className="text-tiki-blue font-medium">From $399</p>
                       <p className="text-xs text-gray-500">Up to 80 servings</p>
                     </div>
-                  </a>
-                  <a href="/#contact?package=Premium%20Event%20Package" className="block">
+                  </Link>
+                  <Link to="/#contact?package=Premium%20Event%20Package" className="block">
                     <div className="p-4 rounded-lg bg-gradient-to-r from-tiki-blue/5 to-tiki-green/5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                       <div className="font-bold text-tiki-dark">Premium Events</div>
                       <p className="text-tiki-blue font-medium">From $699</p>
                       <p className="text-xs text-gray-500">Up to 150 servings</p>
                     </div>
-                  </a>
-                  <a href="/#contact?package=Custom%20Event%20Package" className="block">
+                  </Link>
+                  <Link to="/#contact?package=Custom%20Event%20Package" className="block">
                     <div className="p-4 rounded-lg bg-gradient-to-r from-tiki-blue/5 to-tiki-green/5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                       <div className="font-bold text-tiki-dark">Custom Events</div>
                       <p className="text-tiki-blue font-medium">Custom pricing</p>
                       <p className="text-xs text-gray-500">Tailored to your needs</p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <Link to="/catering">
                   <TikiButton size="lg" className="w-full">
